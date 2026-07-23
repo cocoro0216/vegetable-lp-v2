@@ -1,0 +1,100 @@
+@use "variables" as *;
+
+.mv__sp  {
+    position: relative;
+
+    display: block;
+}
+
+.mv__pc {
+    display: none;
+}
+
+.mv__content {
+    position: absolute;
+    top: 328px;
+    left: $container-padding-sp;
+
+}
+.mv__catchCopy--sp span {
+    display: block;
+}
+
+.mv__catchCopy--sp span + span {
+    margin-top: 16px;
+}
+.mv__detail--sp {
+    font-family: "Noto Sans JP";
+    font-size: 1rem;
+    color: $color-main;
+    line-height: 1;
+
+    margin-top: 16px;
+
+}
+
+// btn
+.mv__btn--sp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+
+    width: 160px;
+    height: 56px;
+    padding: 8px;
+
+    background-color:$color-btn-green;
+    border-radius: 10px;
+
+    right: 16px;
+    bottom: 46px;
+  
+
+}
+
+.mv__btn--badge--sp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1rem;
+    color:$color-btn-green-txt;
+    background-color: $color-bg;
+    line-height: 1.2;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+.mv__btn--txt--sp {
+    font-size: 1.2rem;
+    color:$color-btn-green-txt;
+    line-height: 1;
+
+    margin: 0 9px 0 2px;
+}
+.arrow__default--sp {
+    display: block;
+}
+.arrow__hover--sp {
+    display: none;
+}
+
+
+.mv__btn--sp:hover .arrow__default--sp {
+    display: none;
+}
+.mv__btn--sp:hover .arrow__hover--sp {
+    display: block;
+}
+
+.mv__btn--sp:hover {
+    background-color: $color-btn-green-hover;
+
+}
+.mv__btn--sp:hover .mv__btn--txt--sp {
+    color: $color-btn-green-txt-hover;
+}
