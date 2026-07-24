@@ -1,0 +1,41 @@
+@use "variables" as *;
+
+// sp
+.lead--pc {
+    display: none;
+}
+.lead--sp {
+    display: block;
+} 
+.lead__img {
+    position: relative;
+}
+.lead__farm {
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+
+}
+.lead__vegetable {
+    position: absolute;
+    left: 65%;
+    transform: translate(-50%,-24%);
+
+    
+}
+.lead__content{
+    margin-top: 185px;
+}
+.lead__content h3 {
+    text-align: center;
+}
+.lead__content p {
+    margin-top: 24px;
+    font-size: 1.5rem;
+}
+
+
+
+@media screen and (min-width: 768px){
+    
+}

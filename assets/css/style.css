@@ -74,11 +74,11 @@ h3 {
   width: 100%;
   max-width: 375px;
   padding-inline: 16px;
+  margin-inline: auto;
 }
 @media (min-width: 768px) {
   .container {
     max-width: 1120px;
-    padding-inline: 20px;
   }
 }
 
@@ -137,6 +137,11 @@ h3 {
   transform: translateX(0);
 }
 
+@media screen and (min-width: 768px) {
+  .header__logo {
+    display: none;
+  }
+}
 .mv__sp {
   position: relative;
   display: block;
@@ -224,4 +229,448 @@ h3 {
 
 .mv__btn--sp:hover .mv__btn--txt--sp {
   color: #f8f6f2;
+}
+
+.problem h2 {
+  margin-top: 40px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.problem__item {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #fcfbf8;
+  margin: 24px auto 0;
+}
+
+.problem__item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+}
+
+.problem__item:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(251, 255, 248, 0.48);
+  z-index: 1;
+}
+
+.problem__item:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(253, 253, 227, 0.48);
+  z-index: 1;
+}
+
+.problem__item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(255, 233, 233, 0.48);
+  z-index: 1;
+}
+
+.problem__txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-family: "Shippori Mincho";
+  font-size: 1.7rem;
+  color: #4a4a4a;
+  line-height: 1.8;
+  width: 85%;
+}
+
+.problem__message {
+  font-family: "Shippori Mincho";
+  font-size: 2.6rem;
+  color: #2F2925;
+  line-height: 1.6;
+  text-align: center;
+  margin: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .spBr {
+    display: none;
+  }
+}
+.lead--pc {
+  display: none;
+}
+
+.lead--sp {
+  display: block;
+}
+
+.lead__img {
+  position: relative;
+}
+
+.lead__farm {
+  width: 100%;
+  display: block;
+  margin-top: 40px;
+}
+
+.lead__vegetable {
+  position: absolute;
+  left: 65%;
+  transform: translate(-50%, -24%);
+}
+
+.lead__content {
+  margin-top: 185px;
+}
+
+.lead__content h3 {
+  text-align: center;
+}
+
+.lead__content p {
+  margin-top: 24px;
+  font-size: 1.5rem;
+}
+
+.pcBr {
+  display: none;
+}
+
+.reason h2 {
+  text-align: center;
+  margin-top: 40px;
+  white-space: nowrap;
+  padding-inline: 16px;
+}
+
+.reason__item {
+  position: relative;
+  margin-top: 40px;
+}
+
+.reason__item img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.reason__number {
+  font-family: "lora";
+  font-size: 3rem;
+  font-weight: 500;
+  color: #2F2925;
+  line-height: 1;
+  position: absolute;
+  top: -24px;
+  left: 2px;
+  width: 88px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e7eee1;
+  border-radius: 48% 52% 67% 33%/52% 48% 52% 48%;
+  z-index: 1;
+}
+
+.reason__content h3 {
+  margin-top: 32px;
+  padding-inline: 16px;
+}
+
+.reason__content p {
+  margin-top: 24px;
+  padding-inline: 16px;
+}
+
+.reason__content h3 {
+  white-space: nowrap;
+}
+
+.cta {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  background: url(../images/sp/cta-bg.jpg);
+  background-size: cover;
+}
+
+.cta__card {
+  width: 100%;
+  max-width: 375px;
+}
+
+.cta__topic {
+  width: 100%;
+  text-align: center;
+}
+
+.cta__message {
+  font-family: "Shippori Mincho";
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #2F2925;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.cta__topic h2 {
+  display: inline-block;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-top: 16px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+.cta__img--vegics {
+  width: 100%;
+  max-width: 343px;
+  margin-top: 32px;
+}
+
+.cta__img--kuchibue {
+  width: 100%;
+  max-width: 343px;
+  margin-top: 24px;
+}
+
+.cta__content {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  padding-block: 16px 24px;
+}
+
+.cta__farm {
+  margin-top: 16px;
+}
+
+.cta__content .cta__farm {
+  font-family: "Shippori Mincho";
+  line-height: 1.3;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.cta__content h3 {
+  font-size: 2.3rem;
+  text-align: center;
+  margin-top: 8px;
+  white-space: nowrap;
+}
+
+.cta__price {
+  margin-top: 16px;
+}
+
+.cta__price--value {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 3.6rem;
+  line-height: 1;
+}
+
+.cta__tax {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1;
+  margin-top: 16px;
+}
+
+.cta__content .cta__farmer {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1;
+  margin-top: 16px;
+}
+
+.cta__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px auto 0;
+  background-color: #fff6b8;
+  border-radius: 10px;
+  height: 64px;
+  width: 272px;
+  transition: background-color 0.3s ease, 0.3s ease;
+}
+
+.cta__btn--badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f7f5f1;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-family: "Shippori Mincho";
+  font-size: 1rem;
+  color: #3f4b36;
+  line-height: 1.2;
+}
+
+.cta__btn--txt {
+  font-family: "Shippori Mincho";
+  font-size: 1.8rem;
+  color: #3f4b36;
+  line-height: 1.2;
+  margin: 0 32px 0 16px;
+  white-space: nowrap;
+}
+
+.cta__btn--arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  position: relative;
+  top: -6px;
+}
+
+.cta__btn:hover {
+  background-color: #d98c4a;
+}
+
+.quality__topic--txt {
+  font-family: "Shippori Mincho";
+  font-size: 1.8rem;
+  color: #2F2925;
+  line-height: 1;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.quality__topic {
+  font-family: "Shippori Mincho";
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #2F2925;
+  line-height: 1;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.quality__inner .container {
+  padding-inline: 0;
+}
+
+.quality__voice {
+  position: relative;
+  margin-top: 32px;
+  background-color: #f5f1e8;
+}
+
+.quality__balloon img {
+  display: block;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -110%);
+}
+
+.quality__balloon p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-8%, -340%);
+  z-index: 1;
+  white-space: nowrap;
+  font-family: "Noto Sans JP";
+  color: #4a4a4a;
+  line-height: 1;
+}
+
+.quality__woman {
+  display: block;
+  width: 238px;
+  padding-top: 160px;
+}
+
+.quality__catch {
+  font-family: "Shippori Mincho";
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.quality__catchTxt {
+  font-family: "Shippori Mincho";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.quality__refund {
+  text-align: center;
+}
+
+.quality__company {
+  font-family: "Shippori Mincho";
+  line-height: 1;
+}
+
+.quality__emphasis {
+  font-family: "Shippori Mincho";
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #7f8f6a;
+  line-height: 1;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.quality__emphasisTxt {
+  font-family: "Shippori Mincho";
+  font-size: 1.6rem;
+  line-height: 1;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.quality__content {
+  background-color: #e7eee1;
+  margin-top: 24px;
+}
+
+.quality__img img {
+  max-width: 100%;
+}
+
+.quality__txt {
+  font-family: "Shippori Mincho";
+}
+
+.quality__txt p {
+  margin-top: 24px;
+}
+
+.quality__last {
+  padding-bottom: 40px;
+}
+
+.quality__line {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

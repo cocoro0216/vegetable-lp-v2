@@ -67,10 +67,10 @@ h3{
     width: 100%;
     max-width: $container-width-sp;
     padding-inline: $container-padding-sp;
+    margin-inline: auto;
 
     @media (min-width: $breakpoint-pc) {
         max-width: $container-width-pc;
-        padding-inline: $container-padding-pc;
     }
 }
 

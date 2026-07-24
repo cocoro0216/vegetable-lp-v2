@@ -1,0 +1,132 @@
+@use "variables" as *;
+
+// sp
+.quality__topic--txt {
+    font-family: "Shippori Mincho";
+    font-size: 1.8rem;
+    color:$color-section;
+    line-height: 1;
+    
+    text-align: center;
+    margin-top: 40px;
+}
+.quality__topic {
+    font-family: "Shippori Mincho";
+    font-size: 2.6rem;
+    font-weight: 600;
+    color:$color-section;
+    line-height: 1;
+
+    text-align: center;
+    margin-top: 16px;
+
+}
+.quality__inner .container {
+    padding-inline: 0;
+}
+.quality__voice {
+    position: relative;
+    margin-top: 32px;
+    background-color: #f5f1e8;
+}
+
+.quality__balloon img {
+    display: block;
+
+    height: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%,-110%);
+}
+.quality__balloon p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-8%, -340%);
+
+    z-index: 1;
+    white-space: nowrap;
+
+    font-family: "Noto Sans JP";
+    color:$color-text;
+    line-height: 1;
+
+}
+.quality__woman {
+    display: block;
+    width: 238px;
+    padding-top: 160px;   
+
+}
+.quality__catch {
+    font-family: "Shippori Mincho";
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1;
+
+    text-align: center;
+    margin-top: 24px;
+
+}
+.quality__catchTxt {
+    font-family: "Shippori Mincho";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.4;
+
+    text-align: center;
+    margin-top: 24px;
+
+}
+.quality__refund {
+    text-align: center;
+}
+.quality__company {
+    font-family: "Shippori Mincho";
+    line-height: 1;
+
+}
+.quality__emphasis {
+    font-family: "Shippori Mincho";
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #7f8f6a;
+    line-height: 1;
+
+    text-align: center;
+    margin-top: 8px;
+}
+.quality__emphasisTxt {
+    font-family: "Shippori Mincho";
+    font-size: 1.6rem;
+    line-height: 1;
+
+    text-align: center;
+    margin-top: 8px;
+
+}
+.quality__content {
+    background-color: #e7eee1;
+    margin-top: 24px;
+}
+
+.quality__img img {
+    max-width: 100%;
+}
+
+
+.quality__txt {
+    font-family: "Shippori Mincho";
+}
+.quality__txt p {
+    margin-top: 24px;  
+} 
+.quality__last {
+    padding-bottom: 40px;
+}
+.quality__line {
+    display: none;
+}
+

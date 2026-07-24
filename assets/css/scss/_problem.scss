@@ -1,0 +1,84 @@
+@use "variables" as *;
+
+// sp
+.problem h2 {
+    margin-top: 40px;
+    text-align: center;
+    line-height: 1.6;  
+}
+
+.problem__item {
+    position: relative;
+    width: fit-content;
+    background-color: $color-bg;
+    margin: 24px auto 0;
+}
+.problem__item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;    
+}
+.problem__item:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background:rgba(251, 255, 248, 0.48);
+    z-index: 1;
+}
+
+.problem__item:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background:rgba(253, 253, 227, 0.48);
+    z-index: 1;
+}
+
+.problem__item:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background:rgba(255, 233, 233, 0.48);
+    z-index: 1;
+}
+
+
+.problem__txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    text-align: center;
+
+    font-family: "Shippori Mincho";
+    font-size: 1.7rem;
+    color:$color-text;
+    line-height: 1.8;
+
+    width: 85%;
+
+}
+.problem__message {
+    font-family: "Shippori Mincho";
+    font-size:$fs-h2-sp;
+    color:$color-section;
+    line-height: 1.6;
+
+    text-align: center;
+    margin: 24px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .spBr {
+        display: none;
+    }
+}

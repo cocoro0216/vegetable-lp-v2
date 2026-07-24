@@ -76,6 +76,8 @@
 
     margin: 0 9px 0 2px;
 }
+
+
 .arrow__default--sp {
     display: block;
 }
@@ -98,3 +100,19 @@
 .mv__btn--sp:hover .mv__btn--txt--sp {
     color: $color-btn-green-txt-hover;
 }
+
+
+// mv-pc
+@media screen and (min-width: 768px){
+//     .mv__sp  {
+//     display: none;
+// }
+
+//     .mv__pc {
+//     display: block;
+// }
+
+
+}
+
+

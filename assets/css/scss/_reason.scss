@@ -1,0 +1,57 @@
+@use "variables" as *;
+
+.pcBr{
+    display: none;
+}
+.reason h2 {
+    text-align: center;
+    margin-top: 40px;
+    white-space: nowrap;
+    padding-inline: 16px;
+}
+.reason__item {
+      position: relative;
+
+      margin-top: 40px;
+}
+.reason__item img {
+    width: 100%;
+
+    display: block;
+    height: auto; 
+}
+.reason__number {
+    font-family: "lora";
+    font-size: 3rem;
+    font-weight: 500;
+    color:$color-section;
+    line-height: 1;
+
+    position: absolute;
+    top: -24px;
+    left: 2px;
+
+    width: 88px;
+    aspect-ratio: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #e7eee1;
+    border-radius: 48% 52% 67% 33%/ 52% 48% 52% 48% ;
+
+    z-index: 1;
+
+}
+.reason__content h3 {
+    margin-top: 32px;
+    padding-inline: 16px;
+}
+.reason__content p {
+    margin-top: 24px;
+    padding-inline: 16px;
+}
+.reason__content h3 {
+    white-space: nowrap;
+}

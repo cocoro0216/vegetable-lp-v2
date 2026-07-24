@@ -1,0 +1,357 @@
+/* sp */
+/* ====font colors==== */
+/* ====btn colors==== */
+/* btn1 */
+/* btn2 */
+/* faq */
+/* bg */
+/* ====font size ==== */
+/* pc */
+/* ====font size ==== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Shippori Mincho";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #4a4a4a;
+  background-color: #fcfbf8;
+  line-height: 1.6;
+}
+
+h1 {
+  font-family: "Shippori Mincho", serif;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #fdfbf7;
+  line-height: 1.3;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-family: "Shippori Mincho", serif;
+  font-size: 2.6rem;
+  font-style: normal;
+  font-weight: 500;
+  color: #2F2925;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 3.6rem;
+  }
+}
+
+h3 {
+  font-family: "Shippori Mincho", serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  color: #2F2925;
+  line-height: 1.3;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 2.8rem;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  padding-inline: 16px;
+  margin-inline: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 1120px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 24px;
+}
+
+.header__icon {
+  width: 113px;
+  height: auto;
+  display: block;
+}
+
+.header__btn {
+  display: block;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.header__nav .nav__icon {
+  width: 113px;
+  height: auto;
+  display: block;
+}
+
+.nav__close {
+  display: block;
+}
+
+.nav__list {
+  margin-top: 80px;
+}
+
+.nav__list li + li {
+  margin-top: 56px;
+}
+
+.nav__group {
+  background-color: #fcfbf8;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transform: translateX(-100%);
+  transition: 0.4s;
+}
+.nav__group.active {
+  transform: translateX(0);
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    display: none;
+  }
+}
+.mv__sp {
+  position: relative;
+  display: block;
+}
+
+.mv__pc {
+  display: none;
+}
+
+
+
+.mv__content {
+  position: absolute;
+  top: 328px;
+  left: 16px;
+}
+
+.mv__catchCopy--sp span {
+  display: block;
+}
+
+.mv__catchCopy--sp span + span {
+  margin-top: 16px;
+}
+
+.mv__detail--sp {
+  font-family: "Noto Sans JP";
+  font-size: 1rem;
+  color: #fdfbf7;
+  line-height: 1;
+  margin-top: 16px;
+}
+
+.mv__btn--sp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 160px;
+  height: 56px;
+  padding: 8px;
+  background-color: rgba(253, 251, 247, 0.8);
+  border-radius: 10px;
+  right: 16px;
+  bottom: 46px;
+}
+
+.mv__btn--badge--sp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #4a4038;
+  background-color: #fcfbf8;
+  line-height: 1.2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.mv__btn--txt--sp {
+  font-size: 1.2rem;
+  color: #4a4038;
+  line-height: 1;
+  margin: 0 9px 0 2px;
+}
+
+.arrow__default--sp {
+  display: block;
+}
+
+.arrow__hover--sp {
+  display: none;
+}
+
+.mv__btn--sp:hover .arrow__default--sp {
+  display: none;
+}
+
+.mv__btn--sp:hover .arrow__hover--sp {
+  display: block;
+}
+
+.mv__btn--sp:hover {
+  background-color: rgba(79, 94, 62, 0.8);
+}
+
+.mv__btn--sp:hover .mv__btn--txt--sp {
+  color: #f8f6f2;
+}
+
+@media screen and (min-width: 768px) {
+  .mv__sp {
+    display: none;
+  }
+  .mv__pc {
+    display: block;
+  }
+}
+.problem h2 {
+  margin-top: 40px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.problem__item {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #fcfbf8;
+  margin: 24px auto 0;
+}
+
+.problem__item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+}
+
+.problem__item:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(251, 255, 248, 0.48);
+  z-index: 1;
+}
+
+.problem__item:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(253, 253, 227, 0.48);
+  z-index: 1;
+}
+
+.problem__item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(255, 233, 233, 0.48);
+  z-index: 1;
+}
+
+.problem__txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-family: "Shippori Mincho";
+  font-size: 1.7rem;
+  color: #4a4a4a;
+  line-height: 1.8;
+  width: 85%;
+}
+
+.problem__message {
+  font-family: "Shippori Mincho";
+  font-size: 2.6rem;
+  color: #2F2925;
+  line-height: 1.6;
+  text-align: center;
+  margin: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .spBr {
+    display: none;
+  }
+}
+.lead--pc {
+  display: none;
+}
+
+.lead--sp {
+  display: block;
+}
+
+.lead__img {
+  position: relative;
+}
+
+.lead__farm {
+  width: 100%;
+  display: block;
+  margin-top: 40px;
+}
+
+.lead__vegetable {
+  position: absolute;
+  left: 65%;
+  transform: translate(-50%, -24%);
+}
+
+.lead__content {
+  margin-top: 185px;
+}
+
+.lead__content h3 {
+  text-align: center;
+}
+
+.lead__content p {
+  margin-top: 24px;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
