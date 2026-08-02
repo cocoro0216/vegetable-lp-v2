@@ -78,7 +78,44 @@
 }
 
 @media screen and (min-width: 768px) {
-    .spBr {
-        display: none;
-    }
+    
+    .problem {
+    margin-top: 80px;
+
 }
+
+.problem h2 {
+    white-space: nowrap;
+    line-height: 1;
+}
+.problem__list {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 40px;
+    gap: 20px;
+}
+.problem__txt {
+    font-size: 2.8rem;
+}
+.spBr {
+    display: none;
+}
+.problem__message {
+    font-size: 3.6rem;
+    font-weight: 500;
+    color:$color-text;
+    line-height: 1;
+
+    margin: 40px;
+    text-align: center;
+
+}
+
+
+}
+
+
+
+
+

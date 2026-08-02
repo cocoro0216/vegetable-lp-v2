@@ -1,0 +1,179 @@
+@use "variables" as *;
+
+// sp
+.farmers__topic {
+    text-align: center;
+}
+.farmers__topic--txt {
+    font-family: "Shippori Mincho";
+    font-size: 1.8rem;
+    color:$color-section;
+    line-height: 1;
+
+    text-align: center;
+    margin-top: 40px;
+}
+.farmers__topic h2 {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.farmers__vegetable {
+    margin-top: 24px;
+}
+.farmers__hidamari,
+.farmers__kuchibue {
+    text-align: center;
+
+    margin-top: 32px;
+}
+.farmers__item h3 {
+    text-align: center;
+    margin-top: 32px;
+}
+.farmers__item img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+    max-width: 343px;
+
+    
+
+    margin: 24px auto;
+}
+.farmers__img {
+    margin-top: 24px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.farmers__name {
+    font-family: "Noto Sans JP";
+    
+    font-size: 1.8rem;
+    color:$color-text;
+    line-height: 1.4;
+
+    text-align: center;
+    margin-top: 24px;
+
+}
+.farmers__txt {
+    font-family: "Noto Sans JP";
+
+    margin-top: 16px;
+    grid-row: 4;
+
+    text-align: justify;
+
+
+}
+.farmers__txt-last {
+    font-family: "Noto Sans JP";
+    margin-block: 16px 40px;
+
+    text-align: justify;
+
+}
+.farmers__box {
+    display: block;
+}
+.farmers__img {
+    margin-top: 24px;
+}
+.farmers__content {
+    margin-top: 24px;
+}
+.farmers--pc {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .farmers {
+        display: none;
+    }
+    .farmers--pc {
+        display: block;
+        margin-top: 80px;
+    }
+    .farmers--sp {
+        display: none;
+    }
+    
+    .farmers__catch {
+        text-align: center;
+    }
+    .farmers__hidamari,
+    .farmers__souryoku {
+        display: flex;
+    }
+    .farmers__souryoku {
+        flex-direction: row-reverse;
+        margin-top: 40px;
+
+    }
+    
+    .farmers__content--hidamari {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 56px 0 0 28px;
+    }
+    .farmers__content--souryoku {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 24px;
+    }
+    .farmers__name {
+        margin-top: 32px;
+    }
+    .farmers__txt {
+        margin-top: 16px;
+    }
+    .farmers__catch--souryoku {
+        margin-top: 45px;
+    }
+
+
+
+
+
+
+
+
+    .farmers__img {
+        width: 520px;
+        flex-shrink: 0;
+    }
+    
+    
+    
+    .farmers__vegetable {
+        display: none;
+    } 
+    .farmers__item img {
+        display: block;
+
+        width: 100%;
+        max-width: 450px;
+
+        height: auto;
+
+    }
+    .farmers__item h3 {
+    text-align: left;
+}
+    .farmers__content p {
+        margin-top: 16px;
+    }
+    
+    .farmers__box:last-child {
+        margin-bottom: 80px;
+    }
+    
+
+
+    }
+    

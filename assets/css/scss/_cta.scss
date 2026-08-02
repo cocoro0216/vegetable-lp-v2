@@ -48,13 +48,11 @@
 }
 .cta__img--vegics {
     width: 100%;
-    max-width: 343px;
 
     margin-top: 32px;
 }
 .cta__img--kuchibue {
     width: 100%;
-    max-width: 343px;
 
     margin-top: 24px;
 }
@@ -157,3 +155,94 @@
 .cta__btn:hover {
     background-color:$color-btn-orange-hover;
 }
+
+
+@media screen and (min-width: 768px) {
+    .cta {
+        padding: 80px 0 80px 0;
+        background: url(../images/pc/cta-pc.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .pcBr {
+        display: none;
+    }
+    .cta__message {
+        font-size: 2rem;
+    }
+    .cta__topic h2 {
+        border-bottom: 1px solid $color-content-bg;
+        padding-bottom: 24px;
+    }
+    .cta__cards {
+        display: flex;
+        gap: 20px;
+        text-align: center;
+        margin-top: 40px;
+
+    }
+    .cta__content p {
+        font-size: 1.8rem;
+
+        margin-top: 24px;
+    }
+    .cta__content h3 {
+        font-size: $fs-h3-pc;
+    }
+    .cta__price--value {
+        font-size: 6rem;
+        line-height: 1.4;
+
+        margin-top: 8px;
+    }
+    .cta__tax {
+        font-size: 1.6rem;
+        line-height: 1.4;
+    }
+    .cta__farmer {
+        font-size: 1.6rem;
+        margin-top: 8px;
+    }
+    .cta__img--vegics,
+    .cta__img--kuchibue {
+        width: 100%;
+        max-width: 550px;
+        margin-top: 0;
+    }
+    .cta__content {
+        max-width: 550px;
+        margin: 0 auto;
+
+    }
+    
+    
+}
+/*=============================
+cta-btn-pc
+=============================*/
+@media screen and (min-width: 768px) {
+.cta__btn {
+    margin: 24px auto 0;
+
+    width: 400px;
+    height: 110px;
+}
+.cta__btn--badge {
+    width: 80px;
+    height: 80px;
+    font-size: 1.6rem;
+}
+.cta__btn--txt {
+    font-size: 2.4rem;
+    color:$color-btn-orange-txt;
+
+    margin: 40px 64px 40px 40px;
+
+    white-space: nowrap;
+}
+
+}
+
+
+

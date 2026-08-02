@@ -1,0 +1,37 @@
+@use "variables" as *;
+
+// sp
+.footer__group img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    margin: 40px auto 0;
+}
+.footer__txt {
+    font-family: "Noto Sans JP";
+    font-size: 1rem;
+    line-height: 1;
+
+    text-align: center;
+    margin: 8px auto 40px; 
+
+}
+.footer__icon {
+    width: 113px;
+    height: auto;
+    display: block;
+}
+
+
+// pc
+@media screen and (min-width: 768px){
+    .footer__icon {
+        width: 143px;
+    }
+    .footer__txt {
+        font-family: "Noto Sans JP";
+        font-size: 1.6rem;
+    }
+
+}

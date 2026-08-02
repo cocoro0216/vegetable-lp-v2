@@ -2,18 +2,25 @@
 
 .mv__sp  {
     position: relative;
-
     display: block;
+    height: 677px;
+    overflow: hidden;
 }
 
 .mv__pc {
     display: none;
 }
+.mv__sp-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 
 .mv__content {
     position: absolute;
-    top: 328px;
-    left: $container-padding-sp;
+    top: 61%;
+    transform: translateY(-50%);
+    left: 16px;
 
 }
 .mv__catchCopy--sp span {
@@ -48,7 +55,7 @@
     background-color:$color-btn-green;
     border-radius: 10px;
 
-    right: 16px;
+    right: 36px;
     bottom: 46px;
   
 
@@ -102,15 +109,181 @@
 }
 
 
-// mv-pc
-@media screen and (min-width: 768px){
-//     .mv__sp  {
-//     display: none;
-// }
 
-//     .mv__pc {
-//     display: block;
-// }
+
+@media screen and (min-width: 768px){
+
+    .mv__sp {
+     display: none;
+ }
+
+    .mv__pc {
+        display: block;
+        width: calc(100% - 184px);
+        height: 702px;
+        margin-left: 184px;
+
+        background: url(../images/pc/mv-pc.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        position: relative;
+
+ }
+    .mv__layout--pc {
+        position: relative;
+        height: 100%;
+    }
+    .mv__topic--pc {
+        position: absolute;
+        left: 40px;
+    }
+
+    .header__logo {
+        display: none;
+    }
+    .nav__group {
+        display: block;
+
+        width: 168px;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        transform: translateX(1%);
+
+        white-space: nowrap;
+
+        background-color:$color-bg;
+    }
+    .nav__close {
+        display: none;
+    }
+    .nav__list li+li {
+    margin-top: 40px;
+}
+    .nav__list:last-child {
+        margin-bottom: 40px;
+    }
+    
+    .mv__catchCopy--pc {
+    display: block;
+    white-space: nowrap;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    padding-top: 475px;
+
+    }
+
+    .mv__catchCopy--pc span {
+        display: block;
+    }
+
+    .mv__catchCopy--pc span+span {
+        margin-top: 24px;
+    } 
+
+    .mv__txt--pc {
+        
+        font-size: 1.6rem;
+        color: #fdfbf7;
+        line-height: 1;
+        letter-spacing: 0.03em;
+
+        padding-top: 22px;
+
+    }
+    .header__nav--pc {
+        margin-top: 80px;
+    }
+    .header__nav--pc li + li {
+        margin-top: 40px;
+    }
+    
+}
+
+
+    /*=============================
+    btn-pc
+    =============================*/
+    @media screen and (min-width: 768px) {
+
+        .mv__btn--pc {
+        display: flex;
+        align-items: center;
+
+        background-color: $color-btn-green;
+        border-radius: 5px;
+        height: 80px;
+        width: 240px;
+        padding: 16px;
+
+        transition: background-color .3s ease, color .3s ease;
+
+        position: absolute;
+        right: 40px;
+        bottom: 24px;    
+
+    }
+
+    .mv__btn--badge--pc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #f8f6f2;
+
+    font-family: "Shippori Mincho";
+    font-size: 1rem;
+    font-weight: 400;
+    color:$color-text;
+    line-height: 1.2;
+
+
+}
+.mv__btn--txt--pc {
+    font-family: "Shippori Mincho";
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:$color-btn-green-txt;
+    line-height: 1.2;
+    margin: 31px 29px 30px 8px;
+    white-space: nowrap;
+
+}
+.arrow__default--pc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mv__btn--pc.arrow__default--pc {
+    display: block;
+}
+.arrow__hover--pc {
+    display: none;
+}
+
+
+.mv__btn--pc:hover {
+    background-color: $color-btn-green-hover;
+
+}
+.mv__btn--pc:hover .mv__btn--txt--pc {
+    color: $color-btn-green-txt-hover;
+}
+.mv__btn--pc:hover .arrow__default--pc {
+    display: none;
+}
+.mv__btn--pc:hover .arrow__hover--pc {
+    display: block;
+}
+
+
 
 
 }

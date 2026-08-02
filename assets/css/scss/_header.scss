@@ -61,11 +61,208 @@
 
 // pc
 @media screen and (min-width: 768px){
-    .header__logo {
-        display: none;
+    .pc-layout {
+        display: block;
+        width: calc(100% - 184px);
+        background: url(../images/pc/mv-pc.jpg);
+        height: 702px;
+
+        margin-left: auto;
+
     }
 
+    .header--sp {
+    display: none;
 }
+    .header--pc {
+    display: block;
+}
+    .header--pc .header__logo img {
+        width: 143px;
+    }
+
+    .mv--pc .container {
+        max-width: 1120px;
+        width: 100%;
+
+        margin-left: 8px;
+        margin-right: auto;
+    }
+    .header--pc {
+        flex: 0 0 147px;
+        position: fixed;
+        z-index: 1;
+
+        top: 48px;
+        left: 16px;
+
+        width: 168px;
+    }
+    .header__nav--pc li {
+        margin-top: 40px;
+
+        font-family: "Shippori MIncho";
+        font-size: 1.6rem;
+        color:$color-text;
+        line-height: 1;
+
+    }
+
+    .header__nav--pc li :first-child {
+        margin-top: 80px;
+
+    }
+    
+    .mv__catchCopy--pc {
+    
+    display: block;
+    white-space: nowrap;
+
+
+    letter-spacing: 0.03em;
+
+    line-height: 1.2;
+
+    padding-top: 475px;
+
+
+    }
+
+    .mv__catchCopy--pc span {
+        display: block;
+    }
+
+    .mv__catchCopy--pc span+span {
+        margin-top: 24px;
+    } 
+
+
+    .mv__txt--pc {
+        
+        font-size: 1.6rem;
+        color: #fdfbf7;
+        line-height: 1;
+        letter-spacing: 0.03em;
+
+        padding-top: 22px;
+
+    }
+    .header__nav--pc {
+        margin-top: 80px;
+    }
+    .header__nav--pc li + li {
+        margin-top: 40px;
+    }
+    
+}
+
+
+    /*=============================
+    btn-pc
+    =============================*/
+    @media screen and (min-width: 768px) and (max-width: 1450px) {
+
+        .mv--btnPc {
+            margin-bottom: 24px;
+
+        }
+
+        .mv__btn--pc {
+
+        margin-left: 931px;
+        margin-top: -74px;
+    
+    
+        z-index: 10;
+
+        display: flex;
+        align-items: center;
+
+        background-color: $color-btn-green;
+        border-radius: 5px;
+        height: 80px;
+        width: 240px;
+        padding: 16px;
+
+        transition: background-color .3s ease, color .3s ease;
+    }
+
+    .mv__btn--badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #f8f6f2;
+
+    font-family: "Shippori Mincho";
+    font-size: 1rem;
+    font-weight: 400;
+    color:$color-text;
+    line-height: 1.2;
+
+
+}
+.mv__btn--txtPc {
+    font-family: "Shippori Mincho";
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:$color-btn-green-txt;
+    line-height: 1.2;
+    margin: 31px 29px 30px 8px;
+    white-space: nowrap;
+
+}
+.mv__btn--arrowPc {
+    position: relative;
+    width: 14px;
+    height: 11px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mv__btn--arrowPc img {
+    position: absolute;
+    top: -3px;
+    left: 0;
+}
+.mv__btn--arrowPc .arrow-default {
+    display: block;
+}
+.mv__btn--arrowPc .arrow-hover {
+    display: none;
+}
+.mv__btn--pc:hover .arrow-default {
+    display: none;
+}
+.mv__btn--pc:hover .arrow-hover {
+    display: block;
+}
+
+.mv__btn--pc:hover {
+    background-color: $color-btn-green-hover;
+
+}
+.mv__btn--pc:hover .mv__btn--txtPc {
+    color: $color-btn-green-txt-hover;
+}
+.mv--sp{
+    display: none;
+}
+.mv--pc{
+    display: block;
+}
+
+    }
+
+
+        
+
+
+
 
 
 
