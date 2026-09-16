@@ -241,6 +241,14 @@ cta-btn-pc
 
     white-space: nowrap;
 }
+.cta__vegics,
+.cta__kuchibue {
+    width: 100%;
+    max-width: 930px;
+}
+.cta__cards {
+    grid-template-columns: 1fr;
+}
 
 }
 

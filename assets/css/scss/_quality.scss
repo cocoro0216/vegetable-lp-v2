@@ -162,12 +162,13 @@
 }
 .quality__inner {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1120px;
-    margin: 0 auto;
-    margin-top: 40px;
-    background-color: #f5f1e9;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 40px;
+        background-color: #f5f1e9;
+        width: 100%;
+        max-width: 1120px;
 }
 .quality__voice {
     display: flex;
@@ -222,11 +223,12 @@
     gap: 8px;
 }
 .quality__content {
-    width: 1120px;
-    margin: 40px auto 0;
-    display: flex;
-    flex-direction: row-reverse;
-}
+    width: 100%;
+        margin: 40px auto 0;
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1120px;
+    }
 .quality__txt  {
     font-size: 1.8rem;
     line-height: 1.6;

@@ -62,10 +62,7 @@
 
 
     margin-left: 24px;
-    margin-right: 41px;
-
-    white-space: nowrap;
-
+    margin-right: 24px;
 }
 .faq__secondTxt {
     font-family: "Noto Sans JP";
@@ -191,9 +188,11 @@ faq-answer-pc
 =============================*/
 @media screen and (min-width: 768px)  {
     .faq__answer {
-        width: 930px;
+        width: 100%;
         padding: 48px 40px 48px 48px;
+        max-width: 930px;
     }
+
     .faq__answer:last-child {
         padding: 48px 32px 48px 40px;
     }
@@ -211,6 +210,11 @@ faq-answer-pc
     }
     .faq__content .faq__label {
         margin-left: 56px;
+    }
+    .faq__item {
+        width: 100%;
+        max-width: 930px;
+        margin: 40px auto;
     }
     
 }

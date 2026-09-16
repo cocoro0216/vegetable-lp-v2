@@ -398,9 +398,9 @@ btn-pc
   }
   .mv__pc {
     display: block;
-    width: calc(100% - 184px);
+    width: 100%;
+    max-width: 1440px;
     height: 702px;
-    margin-left: 184px;
     background: url(../images/pc/mv-pc.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -464,11 +464,11 @@ btn-pc
   .header__nav--pc li + li {
     margin-top: 40px;
   }
+  /*=============================
+  btn-pc
+  =============================*/
 }
-/*=============================
-btn-pc
-=============================*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-width: 768px) {
   .mv__btn--pc {
     display: flex;
     align-items: center;
@@ -784,13 +784,16 @@ btn-pc
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 48px;
+    width: 100%;
     max-width: 1120px;
     margin-inline: auto;
     margin-top: 64px;
   }
   .reason__img {
-    width: 600px;
-    flex-shrink: 0;
+    width: 100%;
+    max-width: 600px;
+    flex: 1 1 0;
   }
   .reason__img img {
     width: 100%;
@@ -809,18 +812,16 @@ btn-pc
     font-size: 4.8rem;
   }
   .reason__item:nth-child(odd) .reason__number {
-    left: 483px;
-    top: -18px;
+    left: calc(50% - 80px);
   }
   .reason__item:nth-child(even) .reason__number {
     left: -38px;
     top: -13px;
   }
-  .reason__item:nth-child(even) .reason__img {
-    margin-right: 24px;
-  }
-  .reason__item:nth-child(odd) .reason__content {
-    margin-right: 24px;
+  .reason__content {
+    width: 100%;
+    max-width: 420px;
+    flex: 1 1 0;
   }
   .reason__content h3 {
     margin-top: 50px;
@@ -1053,6 +1054,14 @@ cta-btn-pc
     margin: 40px 64px 40px 40px;
     white-space: nowrap;
   }
+  .cta__vegics,
+  .cta__kuchibue {
+    width: 100%;
+    max-width: 930px;
+  }
+  .cta__cards {
+    grid-template-columns: 1fr;
+  }
 }
 .quality__topic--txt {
   font-family: "Shippori Mincho";
@@ -1211,10 +1220,11 @@ cta-btn-pc
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1120px;
     margin: 0 auto;
     margin-top: 40px;
     background-color: #f5f1e9;
+    width: 100%;
+    max-width: 1120px;
   }
   .quality__voice {
     display: flex;
@@ -1263,10 +1273,11 @@ cta-btn-pc
     gap: 8px;
   }
   .quality__content {
-    width: 1120px;
+    width: 100%;
     margin: 40px auto 0;
     display: flex;
     flex-direction: row-reverse;
+    max-width: 1120px;
   }
   .quality__txt {
     font-size: 1.8rem;
@@ -1408,7 +1419,8 @@ cta-btn-pc
     margin-top: 45px;
   }
   .farmers__img {
-    width: 520px;
+    width: 100%;
+    max-width: 520px;
     flex-shrink: 0;
   }
   .farmers__vegetable {
@@ -1489,8 +1501,7 @@ cta-btn-pc
   color: #2F2925;
   line-height: 1;
   margin-left: 24px;
-  margin-right: 41px;
-  white-space: nowrap;
+  margin-right: 24px;
 }
 
 .faq__secondTxt {
@@ -1603,8 +1614,9 @@ faq-answer-pc
 =============================*/
 @media screen and (min-width: 768px) {
   .faq__answer {
-    width: 930px;
+    width: 100%;
     padding: 48px 40px 48px 48px;
+    max-width: 930px;
   }
   .faq__answer:last-child {
     padding: 48px 32px 48px 40px;
@@ -1623,6 +1635,11 @@ faq-answer-pc
   }
   .faq__content .faq__label {
     margin-left: 56px;
+  }
+  .faq__item {
+    width: 100%;
+    max-width: 930px;
+    margin: 40px auto;
   }
 }
 .footer__group img {

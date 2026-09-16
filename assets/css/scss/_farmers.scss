@@ -135,21 +135,11 @@
     .farmers__catch--souryoku {
         margin-top: 45px;
     }
-
-
-
-
-
-
-
-
     .farmers__img {
-        width: 520px;
+        width: 100%;
+        max-width: 520px;
         flex-shrink: 0;
     }
-    
-    
-    
     .farmers__vegetable {
         display: none;
     } 

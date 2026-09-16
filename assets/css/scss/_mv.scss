@@ -119,9 +119,9 @@
 
     .mv__pc {
         display: block;
-        width: calc(100% - 184px);
+        width:100%;
+        max-width: 1440px;
         height: 702px;
-        margin-left: 184px;
 
         background: url(../images/pc/mv-pc.jpg);
         background-size: cover;
@@ -201,7 +201,7 @@
         margin-top: 40px;
     }
     
-}
+
 
 
     /*=============================
@@ -289,3 +289,4 @@
 }
 
 
+}
